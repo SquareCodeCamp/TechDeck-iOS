@@ -26,5 +26,11 @@
 - (void)addPersonImage:(CCPersonImage *)personImage;
 {
     [[self personImages] addObject:personImage];
+    [personImage setMatch:self];
+}
+
+- (NSString *)description;
+{
+    return [[self personInfo] name];
 }
 @end

@@ -10,8 +10,11 @@
 
 @class CCPersonInfo;
 @class CCPersonImage;
+@class CCDeck;
 
 @interface CCMatch : NSObject
+
+@property (nonatomic, weak) CCDeck *deck;
 
 // Created a setter and a getter.
 @property (nonatomic, strong) CCPersonInfo *personInfo;

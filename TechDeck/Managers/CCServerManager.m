@@ -9,6 +9,11 @@
 #import "CCServerManager.h"
 #import "CCDownload.h"
 
+#import "CCPersonImage.h"
+#import "CCPersonInfo.h"
+#import "CCMatch.h"
+#import "CCDeck.h"
+
 @implementation CCServerManager
 
 - (void)downloadDecks:(void(^)(NSArray *decks, NSError *error))completion;
@@ -17,7 +22,38 @@
     
     CCDownload *downloader = [[CCDownload alloc] initWithURL:decks completionBlock:^(NSData *data, NSError *error) {
         NSDictionary *jsonDictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:NULL];
-        NSLog(@"josn Dictionary is %@", jsonDictionary);
+        
+        NSMutableArray *decks = [[NSMutableArray alloc] init];
+        
+        // Inflate model objects with JSON data.
+        for (NSDictionary *deckDictionary in [jsonDictionary objectForKey:@"decks"]) {
+            
+            CCDeck *deck = [[CCDeck alloc] init];
+            [deck setDeckName:[deckDictionary valueForKey:@"name"]];
+            
+            [decks addObject:deck];
+
+            for (NSDictionary *cardDictionary in [deckDictionary objectForKey:@"cards"]) {
+                CCMatch *match = [[CCMatch alloc] init];
+                [deck addMatch:match];
+                
+                CCPersonImage *personImage = [[CCPersonImage alloc] init];
+                [personImage setImageURL:[cardDictionary valueForKey:@"image_url"]];
+                
+                [match addPersonImage:personImage];
+                
+                CCPersonInfo *personInfo = [[CCPersonInfo alloc] init];
+                
+                [personInfo setBio:[cardDictionary valueForKey:@"bio"]];
+                [personInfo setName:[cardDictionary valueForKey:@"name"]];
+                [personInfo setWikiLink:[cardDictionary valueForKey:@"wiki_link"]];
+                [personInfo setPersonID:[cardDictionary valueForKey:@"id"]];
+                
+                [match setPersonInfo:personInfo];
+            }
+        }
+        
+        completion(decks, error);
     }];
     
     [downloader start];

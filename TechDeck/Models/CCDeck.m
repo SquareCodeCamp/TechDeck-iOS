@@ -7,6 +7,7 @@
 //
 
 #import "CCDeck.h"
+#import "CCMatch.h"
 
 @implementation CCDeck
 
@@ -23,6 +24,12 @@
 - (void)addMatch:(CCMatch *)match;
 {
     [[self matches] addObject:match];
+    [match setDeck:self];
+}
+
+- (NSString *)description;
+{
+    return [NSString stringWithFormat:@"%@ %@", [self deckName], [self matches]];
 }
 
 @end

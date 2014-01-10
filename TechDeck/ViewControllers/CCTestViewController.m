@@ -39,9 +39,11 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)didTapTestConnectionButton:(UIButton *)sender {
+- (IBAction)didTapDownloadDecksButton:(UIButton *)sender {
     CCServerManager *serverManager = [[CCServerManager alloc] init];
-    [serverManager downloadTop10SongsFromItunes];
+    [serverManager downloadDecks:^(NSArray *decks, NSError *error) {
+        NSLog(@"decks downloaded %@", decks);
+    }];
 }
 
 @end

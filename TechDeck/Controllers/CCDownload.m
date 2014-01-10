@@ -53,7 +53,6 @@
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection;
 {
-    NSLog(@"data is finished %i", [[self data] length]);
     self.completionBlock([self data], nil);
 }
 
