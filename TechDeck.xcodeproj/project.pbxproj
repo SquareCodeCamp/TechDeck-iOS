@@ -32,6 +32,7 @@
 		595F868F1880A55C0028487C /* CCMatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 595F868D1880A55C0028487C /* CCMatchViewController.m */; };
 		595F86901880A55C0028487C /* CCMatchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 595F868E1880A55C0028487C /* CCMatchViewController.xib */; };
 		595F86931880AA260028487C /* CCDeckSelectionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 595F86921880AA260028487C /* CCDeckSelectionsTableViewController.m */; };
+		595F86971880B95D0028487C /* wiki.png in Resources */ = {isa = PBXBuildFile; fileRef = 595F86961880B95D0028487C /* wiki.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		595F868E1880A55C0028487C /* CCMatchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CCMatchViewController.xib; path = ViewControllers/CCMatchViewController.xib; sourceTree = "<group>"; };
 		595F86911880AA260028487C /* CCDeckSelectionsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCDeckSelectionsTableViewController.h; path = ViewControllers/CCDeckSelectionsTableViewController.h; sourceTree = "<group>"; };
 		595F86921880AA260028487C /* CCDeckSelectionsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCDeckSelectionsTableViewController.m; path = ViewControllers/CCDeckSelectionsTableViewController.m; sourceTree = "<group>"; };
+		595F86961880B95D0028487C /* wiki.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wiki.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 				595F867E18807E590028487C /* Model */,
 				595F865218806AB50028487C /* Images.xcassets */,
 				595F864F18806AB50028487C /* TechDeck.xcdatamodeld */,
+				595F86961880B95D0028487C /* wiki.png */,
 				595F864418806AB50028487C /* Supporting Files */,
 			);
 			path = TechDeck;
@@ -293,6 +296,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				595F86971880B95D0028487C /* wiki.png in Resources */,
 				595F864818806AB50028487C /* InfoPlist.strings in Resources */,
 				595F865318806AB50028487C /* Images.xcassets in Resources */,
 				595F86901880A55C0028487C /* CCMatchViewController.xib in Resources */,
