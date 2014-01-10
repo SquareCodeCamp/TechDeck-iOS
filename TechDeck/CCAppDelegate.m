@@ -7,7 +7,7 @@
 //
 
 #import "CCAppDelegate.h"
-#import "CCTestViewController.h"
+#import "CCDeckSelectionsTableViewController.h"
 
 @implementation CCAppDelegate
 
@@ -19,8 +19,11 @@
 {
     [self setWindow:[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]]];
     
-    CCTestViewController *testViewController = [[CCTestViewController alloc] initWithNibName:nil bundle:nil];
-    [[self window] setRootViewController:testViewController];
+    CCDeckSelectionsTableViewController *deckSelectionTableViewController = [[CCDeckSelectionsTableViewController alloc] initWithNibName:nil bundle:nil];
+    
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:deckSelectionTableViewController];
+    
+    [[self window] setRootViewController:navController];
     
     [[self window] makeKeyAndVisible];
     return YES;

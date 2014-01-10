@@ -16,6 +16,16 @@
 
 @implementation CCServerManager
 
++ (instancetype)sharedManager;
+{
+    static CCServerManager *sharedServerManager = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedServerManager = [[self alloc] init];
+    });
+    return sharedServerManager;
+}
+
 - (void)downloadDecks:(void(^)(NSArray *decks, NSError *error))completion;
 {
     NSURL *decks = [NSURL URLWithString:@"https://codecamp-techdeck.herokuapp.com/api/v1"];
@@ -38,7 +48,7 @@
                 [deck addMatch:match];
                 
                 CCPersonImage *personImage = [[CCPersonImage alloc] init];
-                [personImage setImageURL:[cardDictionary valueForKey:@"image_url"]];
+                [personImage setImageURL:[NSURL URLWithString:[cardDictionary valueForKey:@"image_url"]]];
                 
                 [match addPersonImage:personImage];
                 

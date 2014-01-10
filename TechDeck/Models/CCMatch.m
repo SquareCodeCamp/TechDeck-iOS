@@ -29,6 +29,12 @@
     [personImage setMatch:self];
 }
 
+- (void)setPersonInfo:(CCPersonInfo *)personInfo;
+{
+    _personInfo = personInfo;
+    [personInfo setMatch:self];
+}
+
 - (NSString *)description;
 {
     return [[self personInfo] name];

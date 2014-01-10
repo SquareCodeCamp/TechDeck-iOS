@@ -22,14 +22,16 @@
 		595F865D18806AB50028487C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 595F864118806AB50028487C /* CoreData.framework */; };
 		595F866518806AB50028487C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 595F866318806AB50028487C /* InfoPlist.strings */; };
 		595F866718806AB50028487C /* TechDeckTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 595F866618806AB50028487C /* TechDeckTests.m */; };
-		595F867318806B950028487C /* CCTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 595F867118806B950028487C /* CCTestViewController.m */; };
-		595F867418806B950028487C /* CCTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 595F867218806B950028487C /* CCTestViewController.xib */; };
 		595F8677188072100028487C /* CCServerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 595F8676188072100028487C /* CCServerManager.m */; };
 		595F867A188072390028487C /* CCDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 595F8679188072390028487C /* CCDownload.m */; };
 		595F867D18807D4A0028487C /* CCPersonInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 595F867C18807D4A0028487C /* CCPersonInfo.m */; };
 		595F868118807E740028487C /* CCPersonImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 595F868018807E740028487C /* CCPersonImage.m */; };
 		595F868418807EE40028487C /* CCMatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 595F868318807EE40028487C /* CCMatch.m */; };
 		595F8687188086B90028487C /* CCDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 595F8686188086B90028487C /* CCDeck.m */; };
+		595F868B18809F010028487C /* CCImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 595F868A18809F010028487C /* CCImageStore.m */; };
+		595F868F1880A55C0028487C /* CCMatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 595F868D1880A55C0028487C /* CCMatchViewController.m */; };
+		595F86901880A55C0028487C /* CCMatchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 595F868E1880A55C0028487C /* CCMatchViewController.xib */; };
+		595F86931880AA260028487C /* CCDeckSelectionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 595F86921880AA260028487C /* CCDeckSelectionsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,9 +63,6 @@
 		595F866218806AB50028487C /* TechDeckTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TechDeckTests-Info.plist"; sourceTree = "<group>"; };
 		595F866418806AB50028487C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		595F866618806AB50028487C /* TechDeckTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TechDeckTests.m; sourceTree = "<group>"; };
-		595F867018806B950028487C /* CCTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCTestViewController.h; path = ViewControllers/CCTestViewController.h; sourceTree = "<group>"; };
-		595F867118806B950028487C /* CCTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCTestViewController.m; path = ViewControllers/CCTestViewController.m; sourceTree = "<group>"; };
-		595F867218806B950028487C /* CCTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CCTestViewController.xib; path = ViewControllers/CCTestViewController.xib; sourceTree = "<group>"; };
 		595F8675188072100028487C /* CCServerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCServerManager.h; path = Managers/CCServerManager.h; sourceTree = "<group>"; };
 		595F8676188072100028487C /* CCServerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCServerManager.m; path = Managers/CCServerManager.m; sourceTree = "<group>"; };
 		595F8678188072390028487C /* CCDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCDownload.h; path = Controllers/CCDownload.h; sourceTree = "<group>"; };
@@ -76,6 +75,13 @@
 		595F868318807EE40028487C /* CCMatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCMatch.m; path = Models/CCMatch.m; sourceTree = "<group>"; };
 		595F8685188086B90028487C /* CCDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCDeck.h; path = Models/CCDeck.h; sourceTree = "<group>"; };
 		595F8686188086B90028487C /* CCDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCDeck.m; path = Models/CCDeck.m; sourceTree = "<group>"; };
+		595F868918809F010028487C /* CCImageStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCImageStore.h; path = Managers/CCImageStore.h; sourceTree = "<group>"; };
+		595F868A18809F010028487C /* CCImageStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCImageStore.m; path = Managers/CCImageStore.m; sourceTree = "<group>"; };
+		595F868C1880A55C0028487C /* CCMatchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCMatchViewController.h; path = ViewControllers/CCMatchViewController.h; sourceTree = "<group>"; };
+		595F868D1880A55C0028487C /* CCMatchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCMatchViewController.m; path = ViewControllers/CCMatchViewController.m; sourceTree = "<group>"; };
+		595F868E1880A55C0028487C /* CCMatchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CCMatchViewController.xib; path = ViewControllers/CCMatchViewController.xib; sourceTree = "<group>"; };
+		595F86911880AA260028487C /* CCDeckSelectionsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCDeckSelectionsTableViewController.h; path = ViewControllers/CCDeckSelectionsTableViewController.h; sourceTree = "<group>"; };
+		595F86921880AA260028487C /* CCDeckSelectionsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCDeckSelectionsTableViewController.m; path = ViewControllers/CCDeckSelectionsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,14 +146,13 @@
 			children = (
 				595F864C18806AB50028487C /* CCAppDelegate.h */,
 				595F864D18806AB50028487C /* CCAppDelegate.m */,
-				595F867018806B950028487C /* CCTestViewController.h */,
-				595F867118806B950028487C /* CCTestViewController.m */,
-				595F867218806B950028487C /* CCTestViewController.xib */,
-				595F8675188072100028487C /* CCServerManager.h */,
-				595F8676188072100028487C /* CCServerManager.m */,
+				595F86911880AA260028487C /* CCDeckSelectionsTableViewController.h */,
+				595F86921880AA260028487C /* CCDeckSelectionsTableViewController.m */,
+				595F868C1880A55C0028487C /* CCMatchViewController.h */,
+				595F868D1880A55C0028487C /* CCMatchViewController.m */,
+				595F868E1880A55C0028487C /* CCMatchViewController.xib */,
+				595F868818809EDF0028487C /* Managers */,
 				595F867E18807E590028487C /* Model */,
-				595F8678188072390028487C /* CCDownload.h */,
-				595F8679188072390028487C /* CCDownload.m */,
 				595F865218806AB50028487C /* Images.xcassets */,
 				595F864F18806AB50028487C /* TechDeck.xcdatamodeld */,
 				595F864418806AB50028487C /* Supporting Files */,
@@ -197,6 +202,19 @@
 				595F8686188086B90028487C /* CCDeck.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		595F868818809EDF0028487C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				595F8675188072100028487C /* CCServerManager.h */,
+				595F8676188072100028487C /* CCServerManager.m */,
+				595F8678188072390028487C /* CCDownload.h */,
+				595F8679188072390028487C /* CCDownload.m */,
+				595F868918809F010028487C /* CCImageStore.h */,
+				595F868A18809F010028487C /* CCImageStore.m */,
+			);
+			name = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,7 +295,7 @@
 			files = (
 				595F864818806AB50028487C /* InfoPlist.strings in Resources */,
 				595F865318806AB50028487C /* Images.xcassets in Resources */,
-				595F867418806B950028487C /* CCTestViewController.xib in Resources */,
+				595F86901880A55C0028487C /* CCMatchViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,11 +316,13 @@
 			files = (
 				595F8677188072100028487C /* CCServerManager.m in Sources */,
 				595F864E18806AB50028487C /* CCAppDelegate.m in Sources */,
+				595F868F1880A55C0028487C /* CCMatchViewController.m in Sources */,
 				595F868118807E740028487C /* CCPersonImage.m in Sources */,
 				595F868418807EE40028487C /* CCMatch.m in Sources */,
+				595F86931880AA260028487C /* CCDeckSelectionsTableViewController.m in Sources */,
 				595F865118806AB50028487C /* TechDeck.xcdatamodeld in Sources */,
-				595F867318806B950028487C /* CCTestViewController.m in Sources */,
 				595F8687188086B90028487C /* CCDeck.m in Sources */,
+				595F868B18809F010028487C /* CCImageStore.m in Sources */,
 				595F864A18806AB50028487C /* main.m in Sources */,
 				595F867D18807D4A0028487C /* CCPersonInfo.m in Sources */,
 				595F867A188072390028487C /* CCDownload.m in Sources */,

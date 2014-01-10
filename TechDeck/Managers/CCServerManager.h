@@ -10,6 +10,8 @@
 
 @interface CCServerManager : NSObject
 
++ (instancetype)sharedManager;
+
 - (void)downloadDecks:(void(^)(NSArray *decks, NSError *error))completionBlock;
 
 @end
